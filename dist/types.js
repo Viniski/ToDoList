@@ -1,8 +1,3 @@
-// export interface Task {
-//     title: string;
-//     done: boolean;
-//     category?: Category;
-// }
 export class Task {
     constructor(name, done, category = Category.GENEREAL) {
         this.title = name;
@@ -21,4 +16,4 @@ export var Category;
     Category["GYM"] = "gym";
     Category["HOBBY"] = "hobby";
 })(Category || (Category = {}));
-// export type Category = "general" | "work" | "gym" | "hobby"; 
+
