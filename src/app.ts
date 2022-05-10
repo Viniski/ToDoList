@@ -1,6 +1,6 @@
-import { Task, Category } from "./types/types.js";
-import { render } from "./helpers/render-tasks.helper.js";
-import { renderCategories } from "./helpers/render-categories.helper.js";
+import { Task, Category } from "./types.js";
+import { render } from "./render-tasks.helper.js";
+import { renderCategories } from "./render-categories.helper.js";
 
 const taskNameInputElement: HTMLInputElement = document.querySelector("#name");
 const addButtonElement: HTMLButtonElement = document.querySelector("button");
@@ -10,27 +10,6 @@ const categoriesContainerElement: HTMLElement = document.querySelector(".categor
 let selectedCategory: Category;
 
 const categories: Category[] = [Category.GENEREAL, Category.WORK, Category.GYM, Category.HOBBY];
-
-// const tasks: Task[] = [{
-//     title: "Wyrzucić śmieci",
-//     done: false,
-// },
-// {
-//     title: "Pójść na siłkę",
-//     done: true,
-//     category: Category.GYM,
-// },
-// {
-//     title: "Nakarmić koty",
-//     done: false,
-// },
-// ];
-
-// const addTask = (task: Task) => {
-//     if (task.title) {
-//         tasks.push(task);
-//     }
-// }
 
 const tasks: Task[] = [
     new Task("Wyrzucić śmieci", false),
@@ -55,16 +34,6 @@ addButtonElement.addEventListener("click", (event: Event) => {
     newTask.logCreationDate("!!!");
     render(tasks, tasksContainerElement);
 })
-
-// type TaskAsTuple = [string, Category, boolean];
-
-// const task: TaskAsTuple = ["zrobić klatę", Category.GYM, true];
-
-// const taskName = task[0];
-// const taskCategory = task[1];
-// const taskDoneStatus = task[2];
-
-// addTask({ title: taskName, category: taskCategory, done: taskDoneStatus });
 
 renderCategories(
     categories,
