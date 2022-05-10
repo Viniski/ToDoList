@@ -1,9 +1,3 @@
-// export interface Task {
-//     title: string;
-//     done: boolean;
-//     category?: Category;
-// }
-
 export class Task {
     public title: string;
     done: boolean; //domyślnie public
@@ -33,5 +27,3 @@ export enum Category {
     GYM = "gym",
     HOBBY = "hobby",
 }
-
-// export type Category = "general" | "work" | "gym" | "hobby"; 
