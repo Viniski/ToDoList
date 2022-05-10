@@ -1,6 +1,6 @@
-import { Task, Category } from "./types/types.js";
-import { render } from "./helpers/render-tasks.helper.js";
-import { renderCategories } from "./helpers/render-categories.helper.js";
+import { Task, Category } from "./types.js";
+import { render } from "./render-tasks.helper.js";
+import { renderCategories } from "./render-categories.helper.js";
 const taskNameInputElement = document.querySelector("#name");
 const addButtonElement = document.querySelector("button");
 const tasksContainerElement = document.querySelector(".tasks");
