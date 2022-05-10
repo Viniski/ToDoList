@@ -1,4 +1,4 @@
-import { Category } from "../types/types.js";
+import { Category } from "../types.js";
 
 const handleCategoryChange = (category: Category) => {
     if (category === Category.GENEREAL) {
