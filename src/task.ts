@@ -1,4 +1,4 @@
-import { Category } from "../types/types.js";
+import { Category } from "../types.js";
 
 interface Logger {
     logCreationDate: (addition: string) => void;
