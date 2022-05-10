@@ -1,4 +1,4 @@
-import { Category } from "../types/types.js";
+import { Category } from "../types.js";
 export class TaskClass {
     constructor(name, done, category = Category.GENEREAL) {
         this.nameSoUnique = name;
